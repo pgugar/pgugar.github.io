@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(36, 20, 129, 0.214);
+  z-index: 0;
+}
+
+.btn-separation {
+  margin-right: 10px; 
+}
+
+.nav-item a {
+  cursor: pointer;
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 123, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 768px) {
+  .nombre_corto {
+    font-size: 55px; 
+  }
+
+  .saludo {
+    font-size: 30px; 
+  }
+
+  .btn-cv {
+    font-size: 15px; 
+  }
+
+  .main-content img {
+    display: none; 
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 15px; 
+  }
+
+  small {
+    font-size: 5px; 
+  }
+
+  .derechos{
+    font-size: 10px;
+  }
+}

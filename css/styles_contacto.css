@@ -1,0 +1,123 @@
+html, body {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    background-color: #0c14663e !important;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: margin-top 0.3s ease;
+  }
+  
+  @media (max-width: 767.98px) {
+    .content {
+      margin-top: 220px;
+      overflow: hidden;
+    }
+  
+    .content.menu-open {
+      margin-top: 300px;
+    }
+  }
+  
+  footer.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0c1466e2 !important;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .dropdown-item i {
+    color: #6c757d;
+  }
+  
+  h1#perfil-title {
+    border-radius: 10px;
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+  }
+  
+  .scrollable-table {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .enlace-bl {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+    border-radius: 10%;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+  .enlace-bl svg,
+  .enlace-bl i {
+    margin-left: 0.2rem;
+  }
+  
+  .enlace {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navbar {
+    background-color: #ffffff3f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+  .navbar-toggler {
+    border: 2px solid transparent;
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    border-color: white !important;
+    box-shadow: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-collapse {
+    padding-left: 1rem;
+  }
+  
+  @media (max-width: 767.98px) {
+    .hide-on-mobile {
+      display: none !important;
+    }
+  }
+  
